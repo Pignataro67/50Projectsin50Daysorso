@@ -44,6 +44,6 @@ function update() {
     next.disabled = true
   } else {
     prev.disabled = false
-    next.disables = false
+    next.disabled = false
   }
 }
