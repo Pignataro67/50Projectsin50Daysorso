@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
  
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,9 +14,9 @@ body {
 
 .container {
   background-color: #fafafa;
-  transform-origin: top-left;
+  transform-origin: top left;
   transition: transform 0.5s linear;
-  width: 100vh;
+  width: 100vw;
   min-height: 100vh;
   padding: 50px;
 }
@@ -44,7 +44,7 @@ body {
   transform: rotate(-70deg);
 }
 
-.circle-button {
+.circle button {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -56,7 +56,7 @@ body {
   color: #fff;
 }
 
-.circle buttonn:focus {
+.circle button:focus {
   outline: none;
 }
 
