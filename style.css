@@ -10,23 +10,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 95vh;
   overflow: hidden;
-  margin: 0;
+  margin: 5;
 }
 
 .search {
   position: relative;
-  height: 50px;
+  height: 45px;
 }
 
 .search .input {
   background-color: #fff;
   border: 0;
-  font-size: 18px;
-  padding: 15px;
-  height: 50px;
-  width: 50px;
+  font-size: 20px;
+  padding: 20px;
+  height: 55px;
+  width: 55px;
   transition: width 0.3s ease;
 }
 
