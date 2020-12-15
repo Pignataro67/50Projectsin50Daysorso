@@ -12,8 +12,9 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0;
+  overflow-x: hidden;
 }
-
+     
 h1 {
   margin: 10px;
 }
@@ -28,13 +29,13 @@ h1 {
   height: 200px;
   margin: 10px;
   border-radius: 10px;
-  box-shadow: 2px 4px 5px rgba(0, 0, 0, 3);
-  transform: translateX(200%);
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
   transition: transform 0.4s ease;
 }
 
 .box:nth-of-type(even) {
-  transform: translateX(-200%)
+  transform: translateX(-400%)
 }
 
 .box.show {
@@ -43,7 +44,7 @@ h1 {
 
 .box h2 {
   font-size: 45px;
-}
+} 
 
 /* @import url('https://fonts.googleapis.com/css?family=Ubuntu');
  
