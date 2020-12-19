@@ -1,28 +1,50 @@
-const sounds = ['appluase', 'boo', 'gasp','tada', 'victory', 'wrong']
+  const jokeEl = document.getElementById('joke')
+const jokeBtn = document.getElementById('jokeBtn')
 
-sounds.forEach(sound => {
-  const btn = document.createElement('button')
-    btn.classList.add('btn')
+jokeBtn.addEventListener('click', generateJoke)
 
-    btn.innerText = sound
+generateJoke()
 
-    btn.addEventListener('click', () => {
-      stopSongs()
+// USING ASYNC/AWAIT
+async function generateJoke() {
+  const config = {
+    headers: {
+      Accept: 'application/json',
+    },
+  }
 
-      document.getElementById(sound).play()
-    })
+  const res = await fetch('https://icanhazdadjoke.com', config)
 
-    document.getElementById('buttons').appendChild(btn)
-})
+  const data = await res.json()
 
-function stopSongs() {
-  sounds.forEach(sound => {
-    const song = document.getElementById(sound)
-
-    song.pause();
-    song.currentTime = 0;
-  })
+  jokeEl.innerHTML = data.joke
 }
+
+// const sounds = ['appluase', 'boo', 'gasp','tada', 'victory', 'wrong']
+
+// sounds.forEach(sound => {
+//   const btn = document.createElement('button')
+//     btn.classList.add('btn')
+
+//     btn.innerText = sound
+
+//     btn.addEventListener('click', () => {
+//       stopSongs()
+
+//       document.getElementById(sound).play()
+//     })
+
+//     document.getElementById('buttons').appendChild(btn)
+// })
+
+// function stopSongs() {
+//   sounds.forEach(sound => {
+//     const song = document.getElementById(sound)
+
+//     song.pause();
+//     song.currentTime = 0;
+//   })
+// }
 
 // const labels = document.querySelectorAll('.form-control label')
 
