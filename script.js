@@ -1,11 +1,10 @@
-  const jokeEl = document.getElementById('joke')
+const jokeElement = document.getElementById('joke')
 const jokeBtn = document.getElementById('jokeBtn')
 
 jokeBtn.addEventListener('click', generateJoke)
 
 generateJoke()
 
-// USING ASYNC/AWAIT
 async function generateJoke() {
   const config = {
     headers: {
@@ -17,7 +16,7 @@ async function generateJoke() {
 
   const data = await res.json()
 
-  jokeEl.innerHTML = data.joke
+  jokeElement.innerHTML = data.joke
 }
 
 // const sounds = ['appluase', 'boo', 'gasp','tada', 'victory', 'wrong']
