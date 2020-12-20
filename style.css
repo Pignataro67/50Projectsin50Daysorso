@@ -21,7 +21,7 @@ body {
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-  padding: 50px 20px;
+  padding: 50px 25px;
   text-align: center;
   max-width: 95%;
   width: 795px;
@@ -29,16 +29,16 @@ body {
 
 h3 {
   margin: 0;
-  opacity: 0.5;
+  opacity: 0.8;
   letter-spacing: 2px;
 }
 
 .joke {
   font-size: 25px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   line-height: 45px;
   margin: 50px auto;
-  max-width: 600px;
+  max-width: 595px;
 }
 
 .btn {
@@ -46,9 +46,9 @@ h3 {
   color: #fff;
   border: 0;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-  padding: 14px 40px;
-  font-size: 16px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 14px 45px;
+  font-size: 18px;
   cursor: pointer;
 }
 
