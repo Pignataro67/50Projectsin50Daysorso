@@ -1,23 +1,23 @@
-const insert = document.getElementById('insert')
+const insert = document.getElementById('insert');
 
-window.addEventListener('keydown', (event) => {
+window.addEventListener('keydown', (e) => {
   insert.innerHTML = `
-  <div class="key">
-    ${event.key === ' ' ? 'Space' : event.key}
-    <small>event.key</small>
-  </div>
+    <div class="key">
+      ${e.key === ' ' ? 'Space' : e.key}
+      <small>e.key</small>
+    </div>
 
-  <div class="key">
-    ${event.keyCode}
-    <small>event.keyCode</small>
-  </div>
+    <div class="key">
+      ${e.keyCode}
+      <small>e.keyCode</small>
+    </div>
 
-  <div class="key">
-    ${event.code}
-    <small>event.code</small>
-  </div>
-    `
-})
+    <div class="key">
+      ${e.code}
+      <small>e.code</small>
+    </div>
+      `
+  })
 
 // jokeEl = document.getElementById('joke')
 // jokeBtn = document.getElementById('jokeBtn')
